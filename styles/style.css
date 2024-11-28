@@ -1,0 +1,277 @@
+/* Font na citavoj stranici */
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f5efeb;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: #2f4156;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a:hover {
+    background-color: #c8d9e6;
+    color: #2f4156;
+  }
+  
+  .header a.active {
+    background-color: #567c8d;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+
+  .search {
+    float: right;
+  }
+  
+  .header input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .header .search button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #567c8d;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .header .search button:hover {
+    background: #2f4156;
+  }
+  
+
+  /* Link na kojem je pronaden kurs kako uraditi responzivni header
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header */
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+
+    .search {
+        float: none;
+        width: 100%;
+    }
+
+    .header input[type=text] {
+        width: 80%;
+        margin-top: 8px;
+    }
+
+    .header .search button {
+        float: right;
+    }
+  }
+
+  /* Main dio, Textovi, Liste i slike*/
+
+  h1 {
+    color: #2f4156;
+  }
+
+  h3 {
+    color: #2f4156;
+  }
+
+  b {
+    color: #2f4156;
+  }
+
+  li {
+    color: #567c8d;
+  }
+
+  .videoFrame {
+    text-align: center;
+    margin: 20px auto; 
+    padding: 20px; 
+}
+
+.videoFrame h2 {
+    margin: 0;
+    color: #2f4156;
+}
+
+.videoFrame p {
+    margin: 10px 0;
+    color: #567c8d;
+    font-size: 20px;
+}
+  /* Footer i socijalni linkovi */
+footer {
+  text-align: center;
+  padding: 40px;
+  background-color: #c8d9e6;
+  color: white;
+  position: relative;
+}
+
+.links a {
+  margin: 0 10px; 
+  text-decoration: none; 
+  color: white; 
+  transition: color 0.3s ease;
+}
+
+.links a#instagram:hover {
+  color: #E4405F; 
+}
+
+.links a#facebook:hover {
+  color: #3b5998;
+}
+
+.links a#linkedin:hover {
+  color: #0077b5; 
+}
+
+#myBtn {
+  display: none; 
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px; 
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #567c8d;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px; 
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #2f4156;
+}
+
+/* Vertikalni meni sa desne strane */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1; 
+  margin-right: 5px; 
+}
+
+.fixed-right {
+  width: 200px; 
+  background-color: #f5efeb; 
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#vertical-menu {
+  color: #2f4156;
+  font-size: 24px;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #567c8d;
+  color: white;
+}
+
+/* Blog sekcija  */
+#blog-heading {
+  text-align: center;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.blog-grid img {
+  display: block; 
+  margin: 0 auto; 
+}
+
+.first-card{
+  border: 2px solid #567c8d;
+  border-radius: 8px;
+}
+
+.second-card{
+  border: 2px solid #567c8d;
+  border-radius: 8px;
+}
+
+.third-card{
+  border: 2px solid #567c8d;
+  border-radius: 8px;
+}
+
+.first-card p, .second-card p, .third-card p {
+  padding: 5px; 
+}
+
+.first:hover {
+  background-color: #f5efeb;
+}
+
+.second:hover {
+  background-color: #f5efeb;
+}
+
+.third:hover {
+  background-color: #f5efeb;
+}
+
+#blog-category {
+  font-size: 13px;
+  color: lightgrey;
+}
+
+#blog-title{
+  font-size: 16px;
+  color: #2f4156;
+}
