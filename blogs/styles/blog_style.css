@@ -3,7 +3,7 @@
   }
   
   body {
-    font-family: Arial;
+    font-family: Tahoma, sans-serif;
     padding: 20px;
     background: #f5efeb;
   }
@@ -32,6 +32,16 @@
      padding: 20px;
      margin-top: 20px;
      color: #2f4156;
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: white;
   }
   
   .row:after {

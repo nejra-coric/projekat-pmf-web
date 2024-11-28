@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logoNejra.png">
+    <link rel="stylesheet" href="styles/blog_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Jetpack Compose vs XML: Nova era Android razvoja ili samo prolazni trend?</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Android Development</h2>
+        <!-- Blog sam pisala sama uz koristenje inspiracije sa: https://page.ba/news/ubrzan-razvoj-android-aplikacija-sa-jetpack-compose/81?lang=SR-->
+         <!-- Template za ovaj dizajn bloga je pronaden na w3schools
+          Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_blog_layout-->
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Jetpack Compose vs XML: Nova era Android razvoja ili samo prolazni trend?</h2>
+            <h5>Novembar 2024</h5>
+            <img src="assets/mainImage2.png" style="height: 300px;">
+            <p>Kao neko ko je prve korake u mobilnom razvoju napravio upravo u Android svijetu, koristeći XML za kreiranje korisničkog interfejsa, prelazak na Jetpack Compose bio je osvježavajuće iskustvo. XML je bio standardni alat za Android UI više od decenije, nudeći moć i fleksibilnost, ali i sa sobom nosio kompleksnost koja je često činila razvoj zahtjevnijim nego što bi trebao biti. Jetpack Compose, s druge strane, predstavlja revoluciju, donoseći deklarativni pristup koji obećava brži razvoj, manje koda i intuitivnije upravljanje interfejsom.
+                U ovom blogu, podijelit ću svoje iskustvo s oba pristupa, analizirati njihove prednosti i nedostatke, te pokušati odgovoriti na pitanje koje dominira Android zajednicom: <b>Da li Jetpack Compose označava novu eru razvoja Android aplikacija ili je samo prolazni trend?</b></p>
+            <h3>XML: Tradicionalni Alat za Android UI</h3>
+            <p>
+                Od samog početka Android razvoja, XML datoteke su bile osnovna metoda za kreiranje korisničkog interfejsa. Ovaj pristup odvajao je izgled aplikacije od logike, što je omogućilo čistiju strukturu projekta. No, s povećanjem složenosti aplikacija, XML datoteke su često postajale nečitljive i teške za održavanje.
+            </p>
+            <h4>Prednosti XML-a</h4>
+            <ol>
+                <li><b>Jasna separacija koda: </b>UI definisan u XML-u, dok se logika nalazi u Kotlinu ili Javi.</li>
+                <li><b>Široka podrška: </b>XML je dugo bio standard, što znači da je podržan na svim verzijama Androida.</li>
+                <li><b>Bogata dokumentacija i zajednica: </b>Ogroman broj instrukcija, tutorijala i primjera dostupnih online.</li>
+            </ol>
+            <h4>Nedostaci XML-a</h4>
+            <ul>
+                <li><b>Kompleksnost: </b>Složeniji UI često zahtijeva puno hijerarhije i dodatnog rada.</li>
+                <li><b>Složenost upravljanja statusima: </b> U kombinaciji s <i>findViewById</i> (pre View Binding-a), rad s UI elementima bio je spor i sklon greškama.</li>
+                <li><b>Održavanje velikih projekata: </b>Rad s XML-om i Kotlinom može uzrokovati dodatnu redundanciju i povećati mogućnost grešaka.</li>
+            </ul>
+            <h3>Jetpack Compose: Deklarativni Pristup za Novo Doba</h3>
+            <p>
+                Google je 2020. godine predstavio Jetpack Compose kao deklarativni UI framework, inspirisan SwiftUI-em. Umjesto da se oslanja na XML, Compose omogućava programerima da opisuju izgled i ponašanje UI elemenata direktno u Kotlinu, koristeći modernu sintaksu.
+            </p>
+            <h3>Prednosti Jetpack Compose-a</h3>
+            <ol>
+                <li><b>Manje koda: </b>Kreiranje korisničkog interfejsa u Jetpack Compose-u zahtijeva značajno manje koda u poređenju s XML-om.</li>
+                <li><b>Deklarativni pristup: </b>Programeri opisuju <b>šta</b> žele postići, a Compose brine o tome kako.</li>
+                <li><b>Brže prototipiranje: </b>Live Preview omogućava trenutno testiranje i prilagodbu UI-a.</li>
+                <li><b>Jednostavno upravljanje stanjem: </b>Jetpack Compose koristi nativne alate za praćenje i upravljanje promjenama u stanju.</li>
+                <li><b>Bez fragmentacije: </b>Nema potrebe za View Bindingom ili findViewById – UI elementi su direktno dostupni u kodu.</li>
+            </ol>
+            <h3>Nedostaci Jetpack Compose-a</h3>
+            <ul>
+                <li><b>Kompatibilnost: </b>Radi na minimalno Android 5.0 (API 21), ali puni potencijal dolazi na novijim verzijama.</li>
+                <li><b>Krivulja učenja: </b>Deklarativni pristup zahtijeva promjenu načina razmišljanja, što može biti izazovno za iskusne XML developere.</li>
+                <li><b>Ograničenja u zrelosti: </b>Jetpack Compose još uvijek evoluira, što znači da određene funkcionalnosti možda neće biti dostupne ili su teže implementirane.</li>
+            </ul>
+            <p>
+                Kada sam prvi put počela raditi sa Jetpack Compose-om, bilo je jasno da donosi osvježenje u odnosu na XML. Sve što je ranije zahtijevalo više datoteka, adaptere i dodatni kod sada se moglo implementirati u nekoliko redova. Međutim, prilagodba deklarativnom stilu nije bila trenutna – često sam se vraćala starim navikama i načinima razmišljanja iz XML svijeta.
+                Jedan od trenutaka koji mi je zaista "otvorio oči" bila je mogućnost brze iteracije. Dodavanje novih funkcionalnosti u UI ili prilagodba dizajna postali su daleko brži proces, bez stalnog prebacivanja između XML fajlova i koda. Također, rad sa stanjem aplikacije, koji je ranije zahtijevao dodatne alate i frameworke, sada je integrisan unutar Compose-a.
+            </p>
+            <p>
+                Jetpack Compose nije samo prolazni trend – to je budućnost Android razvoja. Iako XML i dalje ima svoje mjesto u održavanju starijih aplikacija, Compose donosi značajna poboljšanja koja ga čine logičnim izborom za nove projekte.
+                Kao i s SwiftUI-em u iOS svijetu, prelazak na deklarativni razvoj zahtijeva prilagodbu, ali dugoročno donosi veće benefite. Compose nije samo alat – on predstavlja novi način razmišljanja o razvoju aplikacija. Za mene, Jetpack Compose nije zamjena za XML, već evolucija koja Android razvoj diže na potpuno novi nivo.
+            </p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <img src="assets/2.png" style="height: 200px; width: 270px;">
+          </div>
+          <div class="card">
+            <h3>Popularni Blogovi</h3>
+            <img src="assets/1.png" style="height: 200px; width: 270px;"><br>
+            <h3>Jetpack Compose vs XML: Nova era Android razvoja ili samo prolazni trend?</h3><br>
+            <img src="assets/3.png" style="height: 200px; width: 270px;"><br>
+            <h3>Kotlin Multiplatform vs Flutter: Budućnost multiplatformskog razvoja mobilnih aplikacija</h3><br>
+          </div>
+          <div class="card">
+            <h3>Pratite</h3>
+            <a href="https://www.instagram.com/nekkyc7/">Instagram</a><br>
+            <a href="https://facebook.com/people/Nejra-Coric/pfbid0bBjvHd5Hya46sgZ7nVBckwK6kUNB5Ac2E1rrkmrwJiakpDQ6WsGWD7Y1BBktfULNl/">Facebook</a><br>
+            <a href="https://ba.linkedin.com/in/nejra-coric-76398a21a">Linkedin</a><br>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <p>Copyright Nejra Coric &copy; All rights reserved.<br></p>
+      </div>
+</body>
+</html>

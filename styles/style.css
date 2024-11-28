@@ -275,3 +275,11 @@ li a:hover {
   font-size: 16px;
   color: #2f4156;
 }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
