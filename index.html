@@ -14,9 +14,9 @@
             <img src="assets/nejratransparent.svg" width="100px" height="70px">
             <div class="header-right">
               <a class="active" href="#home">Početna</a>
-              <a href="#about">O meni</a>
+              <a href="omeni.html">O meni</a>
               <a href="#projects">Projekti</a>
-              <a href="#contact">Kontakt</a>
+              <a href="kontakt.html">Kontakt</a>
             </div>
             <div class="search">
                 <form method="post">
@@ -46,7 +46,7 @@
                     <li>
                         <b>Radno iskustvo: </b>Moje prethodno iskustvo uključuje praksu u HulkApps, gdje sam radila na razvoju Android aplikacija, a zatim sam nastavila praksu u AppDelegate, gdje sam se zaposlila kao Android developer. Tokom vremena, proširila sam svoje vještine na Flutter i iOS razvoj.
                     </li>
-                    <li>
+                    <li id="ulMain">
                         <b>Instrukcije i mentorstvo: </b>Pored svog rada, dajem instrukcije osnovcima i srednjoškolcima, a također sam mentor na ITGirls trening kampu za razvoj mobilnih aplikacija, gdje pomažem mladim talentima da razviju svoje vještine u tehnologiji.
                     </li>
                 </ul>
@@ -64,7 +64,7 @@
                 <ul>
                     <li><a href="#home">O meni</a></li>
                     <li><a href="#news">Projekti</a></li>
-                    <li><a href="#contact">Galerija</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
                     <li><a href="#about">Maturski rad</a></li>
                     <li><a href="#about">Android projekti</a></li>
                     <li><a href="#about">iOS projekti</a></li>
@@ -72,37 +72,49 @@
                     <li><a href="#about">Hobby radovi</a></li>
                     <li><a href="#about">Albumly Memories</a></li>
                     <li><a href="#about">Beautiq App</a></li>
-                    <li><a href="#about">Kontakt</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                   </ul>
             </div>   
         </div>     
 
         <div class="blogFrame">
             <h2 id="blog-heading">Blog</h2>
-            <div class="blog-grid">
-                <a class="first" href="blogs/blog1.html">
-                <div class="first-card">
-                    <img src="assets/blog/1.png" style="width: 385px; height: 300px;">
-                    <p id="blog-category">IOS</p>
-                    <p id="blog-title">SwiftUI vs UIKit: Revolucija naspram Tradicije – Ko vlada budućnošću iOS razvoja?</p>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="assets/blog/1.png" style="width:100%">
+                    <div class="container">
+                      <p class="title">iOS Development</p>
+                      <p>SwiftUI vs UIKit: Revolucija naspram Tradicije – Ko vlada budućnošću iOS razvoja?</p>
+                      <a href="blogs/blog1.html" target="_blank"><p><button class="button">Pročitaj više</button></p></a>
+                    </div>
+                  </div>
                 </div>
-                </a>
-                <a class="second" href="blogs/blog2.html">
-                <div class="second-card">
-                    <img src="assets/blog/2.png" style="width: 385px; height: 300px;">
-                    <p id="blog-category">ANDROID</p>
-                    <p id="blog-title">Jetpack Compose vs XML: Nova era Android razvoja ili samo prolazni trend?</p>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="assets/blog/2.png" style="width:100%">
+                    <div class="container">
+                      <p class="title">Android Development</p>
+                      <p>Jetpack Compose vs XML: Nova era Android razvoja ili samo prolazni trend?</p>
+                      <a href="blogs/blog2.html" target="_blank"><p><button class="button">Pročitaj više</button></p></a>
+                    </div>
+                  </div>
                 </div>
-                </a>
-                <a class="third">
-                <div class="third-card">
-                    <img src="assets/blog/3.png" style="width: 385px; height: 300px;">
-                    <p id="blog-category">MOBILE</p>
-                    <p id="blog-title">Kotlin Multiplatform vs Flutter: Budućnost multiplatformskog razvoja mobilnih aplikacija</p>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="assets/blog/3.png" style="width:100%">
+                    <div class="container">
+                      <p class="title">Cross-Platform</p>
+                      <p>Kotlin Multiplatform vs Flutter: Budućnost multiplatformskog razvoja mobilnih aplikacija</p>
+                      <a href="blogs/blog3.html" target="_blank"><p><button class="button">Pročitaj više</button></p></a>
+                    </div>
                 </div>
-                </a>
-            </div>
+                </div>     
         </div>
+
+        
     </main>
 
     <footer>
