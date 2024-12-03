@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby projekti</title>
+    <link rel="icon" href="assets/logoNejra.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/galerija.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="assets/nejratransparent.svg" width="100px" height="70px">
+            <div class="header-right">
+              <a href="index.html">Početna</a>
+              <a href="omeni.html">O meni</a>
+              <a href="projekti.html">Projekti</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+            <div class="search">
+                <form method="post">
+                  <input type="text" placeholder="Pretraga..." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+          </div>
+    </header>
+
+    <main>       
+        <h2 style="text-align:center">Hobby projekti</h2>
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src="assets/projekti/grav1.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src="assets/projekti/grav2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src="assets/projekti/grav3.png" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src="assets/projekti/alb1.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src="assets/galerija/albumly.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="assets/projekti/grav1.png" style="width:100%" onclick="currentSlide(1)" alt="GravGift">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/projekti/grav2.png" style="width:100%" onclick="currentSlide(2)" alt="GravGift">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/projekti/grav3.png" style="width:100%" onclick="currentSlide(3)" alt="GravGift">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/projekti/alb1.png" style="width:100%" onclick="currentSlide(4)" alt="Albumly Memories">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/galerija/albumly.png" style="width:100%" onclick="currentSlide(5)" alt="Albumly Memories">
+            </div>    
+          </div>
+        </div>
+        
+        <h1>Detalji</h1>
+        <p>GravGift je moj prvi hobby koji sam počela 2022 godine kada mi je otac dao ideju da kupimo lasersku graverku. Sa ovom graverkom radim privjeske, broševe, pločice za ulazna vrata, ploče za kućne adrese itd. Moj Instagram profil za <a href="https://www.instagram.com/grav.gift?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">GravGift</a></p>
+        <p>
+            Albumly Memories sam pokrenula zajedno sa svojim momkom u martu 2024 godine. Razmišljali smo kakvu bi mogli imati zajedničku aktivnosti i došli na ideju albuma sa samoljepljivim sličicama, baš kao kad smo bili djeca skupljali sličice fudbalera, vila, crtaća itd, s tim da smo u ovim albumima mi glavni likovi. Uz ovaj projekat smo upoznali dosta poznatih influensera sa kojima smo uradili i dosta reklama <b>(Selma the Big Mama, Nejla Đonko, Nuni, Nedžmin Ambesković, Mahira Hajdarspahić itd.)</b>. Za kratko vrijeme smo skupili više od 1000 pratitelja i bili smo prezauzeti skupljanjem narudžbi i izradom samih albuma. Nakon toga smo uveli ramove sa LED lampicama, magazine, travel knjige itd.
+        </p>
+        <p>Detaljnije pogledati <a href="albumly.html">ovdje!</a></p>
+    </main>
+
+    <footer>
+        <h4>Linkovi:</h4>
+        <div class="links">
+            <a id="instagram" href="https://www.instagram.com/nekkyc7/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a id="facebook" href="https://www.facebook.com/people/Nejra-Coric/pfbid0avKqLsi9LPtYgFM74RT6DBvS1SpjTRgTT61Z3cip9sCjajfUhZtwaodqDZJM7JZnl/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a id="linkedin" href="https://ba.linkedin.com/in/nejra-coric-76398a21a" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Copyright Nejra Coric &copy; All rights reserved.<br></p>
+
+        <!-- Tutorijal kako da se napravi dugme za vracanje na pocetak stranice je naden na W3 Schools, uradene su male modifikacije
+        Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top-->
+        <button onclick="topFunction()" id="myBtn"><i class="fa fa-arrow-up"></i></button>
+    </footer>
+    <script src="js/backToTopButton.js"></script>
+    <script src="js/slidingGallery.js"></script>
+</body>
+</html>

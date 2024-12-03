@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS projekti</title>
+    <link rel="icon" href="assets/logoNejra.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/galerija.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="assets/nejratransparent.svg" width="100px" height="70px">
+            <div class="header-right">
+              <a href="index.html">Početna</a>
+              <a href="omeni.html">O meni</a>
+              <a href="projekti.html">Projekti</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+            <div class="search">
+                <form method="post">
+                  <input type="text" placeholder="Pretraga..." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+          </div>
+    </header>
+
+    <main>       
+        <h2 style="text-align:center">iOS projekti</h2>
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="assets/projekti/sk4tactic.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="assets/projekti/truckers.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="assets/projekti/reserve.jpeg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="assets/projekti/reservehr.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="assets/projekti/sk4tactic.png" style="width:100%" onclick="currentSlide(1)" alt="Sk4Tactic">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/projekti/truckers.png" style="width:100%" onclick="currentSlide(2)" alt="Truckers">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/projekti/reserve.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Reserve">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="assets/projekti/reservehr.png" style="width:100%" onclick="currentSlide(4)" alt="Reserve">
+            </div>
+          </div>
+        </div>
+        
+        <h1>Detalji</h1>
+        <ol>
+            <li>Sk4Tactic - iOS (AppDelegate)</li>
+            <p>
+                Sk4Tactic za iOS označava moj prvi projekt u svijetu iOS razvoja, koji sam započela iz želje da postanem dio zajednice Apple programera, budući da sam veliki fan svega vezanog uz Apple tehnologije. Kroz ovaj projekt, imala sam priliku učiti osnove iOS programiranja i implementirati ključne funkcionalnosti aplikacije usmjerene na taktičkog pucanja. Rad na ovom projektu bio je značajan korak u mom profesionalnom razvoju i početak mog puta kao iOS programerke.
+            </p>
+
+            <p>Aplikacija je dostupna na App Store platformi <a href="https://apps.apple.com/ba/app/sk4tactic/id6451266241" target="_blank">Sk4Tactic - iOS</a></p>
+
+            <li>Truckers App - iOS</li>
+
+            <p>
+                Truckers App, razvijena u kompaniji App Delegate, predstavlja inovativnu društvenu mrežu namijenjenu povezivanju kamiondžija. Aplikacija omogućava vozačima kamiona da razmjenjuju informacije, dijele iskustva s puta, te se međusobno podržavaju u svakodnevnim izazovima transportnog sektora. Rad na ovom projektu obuhvatao je dizajn i implementaciju funkcionalnosti prilagođenih specifičnim potrebama korisnika, pružajući platformu za komunikaciju, savjete i ažuriranja u realnom vremenu. Aplikacija je osmišljena s ciljem stvaranja zajednice koja olakšava život na putu.
+            </p>
+            <p>Aplikacija dostupna na Google Play platformi <a href="https://apps.apple.com/ba/app/truckersapp/id6449840518">Truckers App - iOS</a></p>
+
+            <li>Reserve.hr - iOS</li>
+            <p>
+                Reserve.hr je inovativna aplikacija u razvoju, koja omogućava jednostavno rezerviranje različitih usluga u Hvaru, Hrvatska. Kroz ovu platformu, korisnici mogu rezervirati stolove u restoranima, masaže, izlete, kao i bookirati i rentati automobile, čime se olakšava organizacija putovanja i boravka na ovom popularnom odredištu. Aplikacija pruža jednostavan i efikasan način za planiranje slobodnog vremena i uživanje u svim sadržajima koje Hvar nudi. Trenutno je u fazi razvoja i još nije objavljena.
+            </p>
+
+            <p>Link za web stranicu <a href="https://reserve.hr">Reserve.hr</a></p>
+        </ol>
+    </main>
+
+    <footer>
+        <h4>Linkovi:</h4>
+        <div class="links">
+            <a id="instagram" href="https://www.instagram.com/nekkyc7/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a id="facebook" href="https://www.facebook.com/people/Nejra-Coric/pfbid0avKqLsi9LPtYgFM74RT6DBvS1SpjTRgTT61Z3cip9sCjajfUhZtwaodqDZJM7JZnl/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a id="linkedin" href="https://ba.linkedin.com/in/nejra-coric-76398a21a" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Copyright Nejra Coric &copy; All rights reserved.<br></p>
+
+        <!-- Tutorijal kako da se napravi dugme za vracanje na pocetak stranice je naden na W3 Schools, uradene su male modifikacije
+        Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top-->
+        <button onclick="topFunction()" id="myBtn"><i class="fa fa-arrow-up"></i></button>
+    </footer>
+    <script src="js/backToTopButton.js"></script>
+    <script src="js/slidingGallery.js"></script>
+</body>
+</html>

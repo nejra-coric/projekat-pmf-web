@@ -21,63 +21,65 @@
           <div class="card">
             <h2>Kotlin Multiplatform vs Flutter: Budućnost multiplatformskog razvoja mobilnih aplikacija</h2>
             <h5>Novembar 2024</h5>
-            <img src="assets/mainImage2.png" style="height: 300px;">
-            <p>Kao neko ko je prve korake u mobilnom razvoju napravio upravo u Android svijetu, koristeći XML za kreiranje korisničkog interfejsa, prelazak na Jetpack Compose bio je osvježavajuće iskustvo. XML je bio standardni alat za Android UI više od decenije, nudeći moć i fleksibilnost, ali i sa sobom nosio kompleksnost koja je često činila razvoj zahtjevnijim nego što bi trebao biti. Jetpack Compose, s druge strane, predstavlja revoluciju, donoseći deklarativni pristup koji obećava brži razvoj, manje koda i intuitivnije upravljanje interfejsom.
-                U ovom blogu, podijelit ću svoje iskustvo s oba pristupa, analizirati njihove prednosti i nedostatke, te pokušati odgovoriti na pitanje koje dominira Android zajednicom: <b>Da li Jetpack Compose označava novu eru razvoja Android aplikacija ili je samo prolazni trend?</b></p>
-            <h3>XML: Tradicionalni Alat za Android UI</h3>
+            <img src="assets/mainImage3.webp" style="height: 300px;">
+            <p>U svijetu mobilnog razvoja, potraga za savršenim multiplatformskim rješenjem traje godinama. S obzirom na to koliko je važno pokrivati iOS i Android korisnike uz minimalno dupliranje koda, programeri i kompanije neprestano traže tehnologije koje omogućavaju izgradnju aplikacija za obje platforme, a da pritom ne žrtvuju performanse, korisničko iskustvo ili razvojnu efikasnost. Dva vodeća kandidata za ovu ulogu danas su Kotlin Multiplatform i Flutter.
+
+              Iako oba alata nude rješenje za multiplatformski razvoj, njihovi pristupi su potpuno različiti. Kotlin Multiplatform fokusira se na dijeljenje logike dok omogućava nativni razvoj sučelja, dok Flutter koristi jedan kôd za sve, kreirajući UI pomoću svog vlastitog renderinga. Ovo sučeljavanje tradicionalnih i modernih pristupa čini ovu raspravu jednom od najvažnijih u svijetu mobilnog razvoja.</p>
+            <h3>Kotlin Multiplatform: Nativno iskustvo kroz dijeljenu logiku</h3>
             <p>
-                Od samog početka Android razvoja, XML datoteke su bile osnovna metoda za kreiranje korisničkog interfejsa. Ovaj pristup odvajao je izgled aplikacije od logike, što je omogućilo čistiju strukturu projekta. No, s povećanjem složenosti aplikacija, XML datoteke su često postajale nečitljive i teške za održavanje.
+              Kotlin Multiplatform (KMP), kojeg razvija JetBrains, omogućava dijeljenje zajedničkog koda između platformi, dok UI ostaje nativan. To znači da možete napisati poslovnu logiku, API pozive, baze podataka i druge funkcionalnosti jednom i koristiti ih na obje platforme, dok istovremeno imate fleksibilnost da dizajnirate iOS i Android sučelje na način koji je specifičan za svaku platformu.
             </p>
-            <h4>Prednosti XML-a</h4>
+            <h4>Prednosti Kotlin Multiplatform-a</h4>
             <ol>
-                <li><b>Jasna separacija koda: </b>UI definisan u XML-u, dok se logika nalazi u Kotlinu ili Javi.</li>
-                <li><b>Široka podrška: </b>XML je dugo bio standard, što znači da je podržan na svim verzijama Androida.</li>
-                <li><b>Bogata dokumentacija i zajednica: </b>Ogroman broj instrukcija, tutorijala i primjera dostupnih online.</li>
+                <li><b>Nativni UI: </b>Omogućava korištenje nativnih alata poput UIKit-a na iOS-u i Jetpack Compose-a na Androidu.</li>
+                <li><b>Postepena implementacija: </b>Možete integrirati KMP u postojeće projekte bez potrebe za kompletnim restrukturiranjem.</li>
+                <li><b>Dijeljenje koda: </b>Omogućava dijeljenje poslovne logike, čime smanjuje dupliranje koda i ubrzava razvoj.</li>
             </ol>
-            <h4>Nedostaci XML-a</h4>
+            <h4>Nedostaci Kotlin Multiplatform-a:</h4>
             <ul>
-                <li><b>Kompleksnost: </b>Složeniji UI često zahtijeva puno hijerarhije i dodatnog rada.</li>
-                <li><b>Složenost upravljanja statusima: </b> U kombinaciji s <i>findViewById</i> (pre View Binding-a), rad s UI elementima bio je spor i sklon greškama.</li>
-                <li><b>Održavanje velikih projekata: </b>Rad s XML-om i Kotlinom može uzrokovati dodatnu redundanciju i povećati mogućnost grešaka.</li>
+                <li><b>Složeniji razvoj: </b>UI se i dalje razvija odvojeno za svaku platformu, što povećava vrijeme razvoja sučelja.</li>
+                <li><b>Manja zajednica: </b> U poređenju s Flutterom, KMP ima manju zajednicu i manje dostupnih tutorijala.</li>
+                <li><b>Nema potpune multiplatformske pokrivenosti: </b>Još uvijek nije pogodan za sve scenarije i zahtijeva dodatne napore u integraciji.</li>
             </ul>
-            <h3>Jetpack Compose: Deklarativni Pristup za Novo Doba</h3>
+            <h3>Flutter: Jedinstveni kod za sve platforme</h3>
             <p>
-                Google je 2020. godine predstavio Jetpack Compose kao deklarativni UI framework, inspirisan SwiftUI-em. Umjesto da se oslanja na XML, Compose omogućava programerima da opisuju izgled i ponašanje UI elemenata direktno u Kotlinu, koristeći modernu sintaksu.
+              Flutter, koji razvija Google, omogućava kreiranje aplikacija pomoću jednog koda za sve platforme. Umjesto korištenja nativnih komponenti, Flutter koristi svoj vlastiti rendering engine za prikazivanje korisničkog sučelja, pružajući konzistentno iskustvo na svim uređajima.
             </p>
-            <h3>Prednosti Jetpack Compose-a</h3>
+            <h3>Prednosti Flutter-a:</h3>
             <ol>
-                <li><b>Manje koda: </b>Kreiranje korisničkog interfejsa u Jetpack Compose-u zahtijeva značajno manje koda u poređenju s XML-om.</li>
-                <li><b>Deklarativni pristup: </b>Programeri opisuju <b>šta</b> žele postići, a Compose brine o tome kako.</li>
-                <li><b>Brže prototipiranje: </b>Live Preview omogućava trenutno testiranje i prilagodbu UI-a.</li>
-                <li><b>Jednostavno upravljanje stanjem: </b>Jetpack Compose koristi nativne alate za praćenje i upravljanje promjenama u stanju.</li>
-                <li><b>Bez fragmentacije: </b>Nema potrebe za View Bindingom ili findViewById – UI elementi su direktno dostupni u kodu.</li>
+                <li><b>MJedan kod za sve: </b>UI i logika se pišu jednom i funkcionišu identično na iOS-u i Androidu.</li>
+                <li><b>Brz razvoj: </b>Hot Reload omogućava instantno testiranje promjena, što značajno ubrzava razvoj.</li>
+                <li><b>Konzistentnost: </b>UI izgleda isto na svim platformama, bez obzira na razlike u nativnim komponentama.</li>
+                <li><b>Široka zajednica: </b>Flutter ima veliku zajednicu, mnoštvo biblioteka i dodataka, te odličnu dokumentaciju.</li>
             </ol>
-            <h3>Nedostaci Jetpack Compose-a</h3>
+            <h3>Nedostaci Flutter-a:</h3>
             <ul>
-                <li><b>Kompatibilnost: </b>Radi na minimalno Android 5.0 (API 21), ali puni potencijal dolazi na novijim verzijama.</li>
-                <li><b>Krivulja učenja: </b>Deklarativni pristup zahtijeva promjenu načina razmišljanja, što može biti izazovno za iskusne XML developere.</li>
-                <li><b>Ograničenja u zrelosti: </b>Jetpack Compose još uvijek evoluira, što znači da određene funkcionalnosti možda neće biti dostupne ili su teže implementirane.</li>
+                <li><b>Nekonzistentan osjećaj nativnosti: </b>Budući da ne koristi nativne komponente, aplikacije mogu izgledati i ponašati se drugačije od nativnih aplikacija.</li>
+                <li><b>Veća veličina aplikacije: </b>Flutter aplikacije su veće zbog uključivanja rendering engine-a.</li>
+                <li><b>Kompleksniji pristup platformskim specifičnostima: </b>Iako postoji mogućnost integracije s nativnim kodom, ovaj proces može biti složeniji.</li>
             </ul>
             <p>
-                Kada sam prvi put počela raditi sa Jetpack Compose-om, bilo je jasno da donosi osvježenje u odnosu na XML. Sve što je ranije zahtijevalo više datoteka, adaptere i dodatni kod sada se moglo implementirati u nekoliko redova. Međutim, prilagodba deklarativnom stilu nije bila trenutna – često sam se vraćala starim navikama i načinima razmišljanja iz XML svijeta.
-                Jedan od trenutaka koji mi je zaista "otvorio oči" bila je mogućnost brze iteracije. Dodavanje novih funkcionalnosti u UI ili prilagodba dizajna postali su daleko brži proces, bez stalnog prebacivanja između XML fajlova i koda. Također, rad sa stanjem aplikacije, koji je ranije zahtijevao dodatne alate i frameworke, sada je integrisan unutar Compose-a.
+              I Kotlin Multiplatform i Flutter imaju svoje prednosti i izazove, a izbor zavisi od specifičnih potreba vašeg projekta. Kotlin Multiplatform privlači one koji žele zadržati nativne performanse i izgled, dok je Flutter idealan za brzo i efikasno kreiranje aplikacija sa zajedničkim korisničkim iskustvom na svim platformama.
             </p>
             <p>
-                Jetpack Compose nije samo prolazni trend – to je budućnost Android razvoja. Iako XML i dalje ima svoje mjesto u održavanju starijih aplikacija, Compose donosi značajna poboljšanja koja ga čine logičnim izborom za nove projekte.
-                Kao i s SwiftUI-em u iOS svijetu, prelazak na deklarativni razvoj zahtijeva prilagodbu, ali dugoročno donosi veće benefite. Compose nije samo alat – on predstavlja novi način razmišljanja o razvoju aplikacija. Za mene, Jetpack Compose nije zamjena za XML, već evolucija koja Android razvoj diže na potpuno novi nivo.
+              Ono što je sigurno je da oba alata predstavljaju budućnost mobilnog razvoja. Bez obzira na to za koji se odlučite, ulazite u uzbudljivo područje koje neprestano evoluira i donosi nove mogućnosti za developere širom svijeta.
             </p>
           </div>
         </div>
         <div class="rightcolumn">
           <div class="card">
-            <img src="assets/2.png" style="height: 200px; width: 270px;">
+            <img src="assets/3.png" style="height: 200px; width: 270px;">
           </div>
           <div class="card">
             <h3>Popularni Blogovi</h3>
-            <img src="assets/1.png" style="height: 200px; width: 270px;"><br>
-            <h3>Jetpack Compose vs XML: Nova era Android razvoja ili samo prolazni trend?</h3><br>
-            <img src="assets/3.png" style="height: 200px; width: 270px;"><br>
-            <h3>Kotlin Multiplatform vs Flutter: Budućnost multiplatformskog razvoja mobilnih aplikacija</h3><br>
+            <a href="blog1.html">
+              <img src="assets/1.png" style="height: 200px; width: 270px;"><br>
+            <h3>SwiftUI vs UIKit: Revolucija naspram Tradicije – Ko vlada budućnošću iOS razvoja?</h3><br>
+            </a>
+            <a href="blog2.html">
+              <img src="assets/2.png" style="height: 200px; width: 270px;"><br>
+              <h3>Jetpack Compose vs XML: Nova era Android razvoja ili samo prolazni trend?</h3><br>
+            </a>
           </div>
           <div class="card">
             <h3>Pratite</h3>
